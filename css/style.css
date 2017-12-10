@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Abril Fatface', cursive, sans-serif;
+  font-size: 62.5%;
+  color: #fff;
+  background-color: #222831;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 75vh;
+  margin: 0 auto;
+}
+
+.quotation-mark {
+  margin-right: 2.5rem;
+  font-size: 18rem;
+  color: #fc513c;
+}
+
+.quote__content {
+  font-size: 1.75rem;
+}
+
+.quote__author {
+  font-size: 1.125rem;
+}
+
+.quote__button {
+  margin-left: 12.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-bottom: 4px solid #222831;
+}
+
+.quote__button:after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  transition: width .5s ease;
+}
+
+.quote__button:hover:after {
+  width: 100%;
+  background: #fc513c;
+}
+
+.twitter-share {
+  display: block;
+  margin: 3rem auto;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.fa {
+  margin-right: 1rem;
+  transition: transform .3s ease-in;
+}
+
+.fa:hover {
+  color: #fc513c;
+  transform: translateY(-3px);
+}
