@@ -11,7 +11,11 @@ const main = () => {
     $.getJSON(url)
       .done(result => {
         quoteContent.append(result.quoteText);
-        quoteAuthor.hide().append('- ' + result.quoteAuthor).show('slow');
+        if (result.quoteAuthor === ''){
+          quoteAuthor.hide().append(`- Unknown`).show('slow');
+        } else {
+          quoteAuthor.hide().append('- ' + result.quoteAuthor).show('slow');
+        }
       })
       .fail(() => {
         quoteContent.append(`ERROR! Please check your internet connection again :(`);
