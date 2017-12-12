@@ -4,12 +4,13 @@ const main = () => {
   const quoteButton = $('.quote__button');
   
   $(quoteButton).on('click', () => {
-    quoteContent.empty();
-    quoteAuthor.empty();
     const url = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?';
         
     $.getJSON(url)
       .done(result => {
+        quoteContent.empty();
+        quoteAuthor.empty();
+
         quoteContent.append(result.quoteText);
         if (result.quoteAuthor === ''){
           quoteAuthor.hide().append(`- Unknown`).show('slow');
