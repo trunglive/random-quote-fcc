@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/trunglive/pen/ooKpOM.
+A Pen created at CodePen.io. You can find this one at https://codepen.io/trunglive/full/ooKpOM.
 
  
