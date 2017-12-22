@@ -1,3 +1,8 @@
+:root {
+  --orange: #fc513c;
+  --black: #222831;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,7 +12,7 @@ body {
   font-family: 'Abril Fatface', cursive, sans-serif;
   font-size: 62.5%;
   color: #fff;
-  background-color: #222831;
+  background-color: var(--black);
 }
 
 .quote {
@@ -22,7 +27,7 @@ body {
 .quotation-mark {
   margin-right: 2.5rem;
   font-size: 18rem;
-  color: #fc513c;
+  color: var(--orange);
 }
 
 .quote__content {
@@ -38,7 +43,7 @@ body {
   color: #fff;
   font-size: 1.5rem;
   text-decoration: none;
-  border-bottom: 4px solid #222831;
+  border-bottom: 4px solid var(--black);
 }
 
 .quote__button:after {
@@ -51,7 +56,7 @@ body {
 
 .quote__button:hover:after {
   width: 100%;
-  background: #fc513c;
+  background: var(--orange);
 }
 
 .twitter-share {
@@ -69,6 +74,6 @@ body {
 }
 
 .fa:hover {
-  color: #fc513c;
+  color: var(--orange);
   transform: translateY(-3px);
 }
